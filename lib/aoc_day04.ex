@@ -65,9 +65,7 @@ defmodule AoC.Day04 do
 
   defp win?(coords) do
     Enum.any?(@win_coords, fn win_coords ->
-      a = MapSet.new(win_coords)
-      b = MapSet.new(coords -- coords -- win_coords)
-      MapSet.equal?(a, b)
+      [] == win_coords -- coords -- coords -- win_coords
     end)
   end
 
