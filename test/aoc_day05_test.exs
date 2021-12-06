@@ -522,7 +522,7 @@ defmodule AoCDay05Test do
     assert AoC.Day05.part1(@input) == 5294
   end
 
-  test "part3" do
+  test "part2" do
     assert AoC.Day05.part2(@test_input) == 12
     assert AoC.Day05.part2(@input) == 21698
   end
